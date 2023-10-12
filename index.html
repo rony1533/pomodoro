@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pomodoro</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Pomodoro</h1>
+        <div id="timerContainer" class="clockTime">
+            <span id="txtTime" class="txtTime">Clique em "Iniciar" para começar</span>
+        </div>
+
+        <div class="groupButton">
+            <button class="btn play" onclick="play()">Iniciar</button>
+            <button class="btn stop" onclick="stop()">Parar</button>
+        </div>
+        <div class="option">
+            <input id="isContinue" type="checkbox" onclick="activeContinuo()">
+            <label for="isContinue">Timer continuo.</label>
+        </div>
+        <span class="text">
+            tempo de trabalho: 25 min 
+            <br>
+            Tempo de descanso: 5 min
+        </span>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
